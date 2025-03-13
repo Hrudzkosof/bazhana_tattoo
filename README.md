@@ -1,54 +1,61 @@
-# React + TypeScript + Vite
+# 🎨 Bazhana Tattoo - Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **portfolio website** for a tattoo artist, built using **React, TypeScript, and Vite**.  
+It includes **About Me, FAQ, a Gallery of Works, and Contact links** with smooth UI animations.
 
-Currently, two official plugins are available:
+## **🚀 Technologies Used**
+- ⚡ **React 18 + Vite** - Fast and optimized frontend framework.
+- 🎨 **TypeScript** - Static typing for better maintainability.
+- 📌 **React Router** - Smooth page navigation.
+- 🔥 **React Icons** - Beautiful icons for social media links.
+- 🎭 **CSS Modules** - Component-based styling.
+- 🛠 **ESLint & Prettier** - Code linting and formatting.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **📂 Project Structure**
 
-## Expanding the ESLint configuration
+bazhana_tattoo/ │── src/ │ ├── assets/images/ # Images for portfolio & backgrounds │ ├── blocks/ # Reusable UI sections │ │ ├── AboutMeBlock/ # About me section │ │ ├── FAQ/ # FAQ with collapsible questions │ │ ├── Gallery/ # Tattoo works gallery │ │ ├── ContactBlock/ # Contact and social media links │ ├── components/ # Shared UI components │ │ ├── Header/ # Navigation bar with smooth scroll │ ├── pages/ # Page-based routing │ │ ├── HomePage/ # Main landing page │ ├── App.tsx # Main application structure │ ├── main.tsx # Entry point for React │── public/ # Static assets │── package.json # Dependencies & scripts │── tsconfig.json # TypeScript configuration │── vite.config.ts # Vite configuration │── README.md # This file!
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## **🌟 Features**
+✔ **Modern UI** with animations and a neon-inspired theme.  
+✔ **Portfolio Gallery** showcasing tattoo works.  
+✔ **Expandable FAQ Section** with important client information.  
+✔ **Sticky Header** for quick navigation.  
+✔ **Fully Responsive** on mobile and desktop.  
+✔ **Dark-themed design** with pink/black gradients.  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## **📌 Setup & Installation**
+To run this project locally, follow these steps:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1️⃣ **Clone the repository**  
+```bash
+git clone https://github.com/Hrudzkosof/bazhana_tattoo.git
+cd bazhana_tattoo
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Start the development server
+npm run dev
+
+
+The site will be available at http://localhost:5173/ 
+
+🔗 Contact Links
+You can reach out via:
+
+🌐 Instagram
+💬 Telegram
+📞 WhatsApp
+🛠 Linting & Code Formatting
+To check linting issues, run:
+npm run lint
+
+
+To automatically fix formatting, run:
+npm run format
+
+📜 License
+This project is licensed under the MIT License.
+
